@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="shortcut icon" href="./assets/css/img/Logo.png" type="image/x-icon">
+    <title>Giỏ hàng</title>
+</head>
+<body style="background-color:  #e9edf0;">
+    <header class="header">
+        <div class="grid wide">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="" class="header__nav-item--link">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="header__nav-item header__nav-item--separate">
+                        <span class="header__nav-item--link">Kết nối</span>
+                        <label class="header__nav-item--link"  for="header-checkbox__facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </label>
+                        <label class="header__nav-item--link" for="header-checkbox__instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </label>
+                    </li>
+                </ul>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item header__nav-item--link-notify">
+                        <a href="" class="header__nav-item--link">
+                            <i class="fa-regular fa-bell bell-icon"></i>
+                            Thông báo
+                        </a>
+                        <div class="Item__notifi">
+                            <h2 class="Item__notifi-label">Thông báo</h2>
+                            <ul class="Item__notifi-list">
+                                <li class="Item__notifi-item Item__notifi-item--active">
+                                    <a href="#" class="Item__notifi-link">
+                                        <div class="Item__notifi-header">
+                                            <img src="./assets/css/img/mienphi-vanchuyen-1.jpg" alt="" class="Item__notifi-img">
+                                        </div>
+                                        <div class="Item__notifi-body">
+                                            <h3 class="Item__notifi-body-label">Mã miễn phí vận chuyển sắp hết hạn</h3>
+                                            <span class="Item__notifi-body-content">Hiệu lực: 0:00 4/1/2023 - 23:59 7/1/2023</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="Item__notifi-item">
+                                    <a href="" class="Item__notifi-link">
+                                        <div class="Item__notifi-header">
+                                            <img src="./assets/css/img/mienphi-vanchuyen-1.jpg" alt="" class="Item__notifi-img">
+                                        </div>
+                                        <div class="Item__notifi-body">
+                                            <h3 class="Item__notifi-body-label">Mã miễn phí vận chuyển sắp hết hạn</h3>
+                                            <span class="Item__notifi-body-content">Hiệu lực: 0:00 4/1/2023 - 23:59 7/1/2023</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="Item__notifi-item Item__notifi-item--active">
+                                    <a href="#" class="Item__notifi-link">
+                                        <div class="Item__notifi-header">
+                                            <img src="./assets/css/img/Khuyến-mãi-Giảm-giá.jpg" alt="" class="Item__notifi-img">
+                                        </div>
+                                        <div class="Item__notifi-body">
+                                            <h3 class="Item__notifi-body-label">Săn ngay mã sale cực khủng!!!</h3>
+                                            <span class="Item__notifi-body-content">Mã giảm giá 50% với các đơn trên 2.000.000đ đang được săn đón. Săn ngay thôi!</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="Item__notifi-bottom">
+                                <a href="#" class="Item__notifi-bottom-link">
+                                    Xem tất cả
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <label for="header-checkbox__register" class="header__nav-item--link">
+                            Đăng ký
+                        </label>
+                    </li>
+                    <li class="header__nav-item">
+                        <label for="header-checkbox__login" class="header__nav-item--link">
+                            Đăng nhập
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-with-search">
+                <div class="logo">
+                    <a href="Trangchu.html" class="logo-link">
+                        <img class="image" src="./assets/css/img/Logo.png" alt="">
+                    </a>
+                </div>
+                <form class="search" action="timkiem.html" onsubmit="return search()">
+                    <div class="search-find" >
+                        <input type="text" placeholder="Tìm kiếm" class="search-find-input">
+                    </div>
+                    <button type="submit" class="search-btn">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <div class="shopping-cart-icon">
+                    <a href="giohang.html" class="shopping-cart-icon-link">
+                        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </div>   
+        </div>
+    </header>
+    <main>
+        <div class="grid wide">
+            <div class="cart ">
+                <div class="cart-name">Giỏ hàng của bạn</div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-ticket">Phiếu giảm giá<span class="fa-solid fa-arrow-right-long"></span></div>
+                <div class="cart-pay"> 
+                    <div class="cart-ship">Phí giao hàng: <span class="ship"></span></div>
+                    <div class="cart-sum">Tổng cộng: <span class="sum"></span></div>
+                </div>
+                <div class="cart-edit">
+                    <button class="cart-submit">Đặt hàng</button>
+                    <button class="cart-delete" onclick="deleteCart()">Xóa giỏ hàng</button>
+                </div>
+                
+            </div>
+        </div>
+        
+    </main>
+    <input hidden type="checkbox" id="header-checkbox__facebook" class="header-checkface">
+        <input hidden type="checkbox" id="header-checkbox__instagram" class="header-checkins">
+        <input hidden type="checkbox" id="header-checkbox__register" class="header-checkreg">
+        <input hidden type="checkbox" id="header-checkbox__login" class="header-checklog">
+        <div class="modal-facebook">
+            <div class="modal-container">
+                <header class="modal-container__header-facebook">
+                    <h1 class="modal-container__header-label-face">
+                        <span class="modal-container__header-label">Facebook</span>
+                    </h1>
+                    <label for="header-checkbox__facebook" class="modal-container__header-icon">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </header>
+                <div class="modal-container__body">
+                    <div class="modal-container__body-input">
+                        <h2 class="input-gmail__label">Email:</h2>
+                        <input type="text" placeholder="Nhập email">
+                    </div>
+                    <div class="modal-container__body-input">
+                        <h2 class="input-password__label">Password:</h2>
+                        <input type="password" placeholder="Nhập password">
+                    </div>
+                    <button  class="modal-container__body-btn">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-instagram">
+            <div class="modal-container">
+                <header class="modal-container__header-instagram">
+                    <h1 class="modal-container__header-label-ins">Instagram</h1>
+                    <label for="header-checkbox__instagram" class="modal-container__header-icon">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </header>
+                <div class="modal-container__body">
+                    <div class="modal-container__body-input">
+                        <h2 class="input-gmail__label">Email:</h2>
+                        <input type="text" placeholder="Phone number or email">
+                    </div>
+                    <div class="modal-container__body-input">
+                        <h2 class="input-password__label">Password:</h2>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <button class="modal-container__body-btn2">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-register">
+            <div class="modal-container-register">
+                <header class="modal-container__header-register">
+                    <h1 class="modal-container__header-label-register">Đăng ký</h1>
+                    <label for="header-checkbox__register" class="modal-container__header-icon">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </header>
+                <div class="modal-container__body-register">
+                    <div class="modal-container__body-input-info">
+                        <div class="body-input-name">
+                            <input type="text" placeholder="Họ và tên">
+                        </div>
+                        <div class="body-input-address">
+                            <input type="text" placeholder="Địa chỉ">
+                        </div>
+                    </div>
+                    <div class="body-input-phone">
+                        <input type="text" placeholder="Phone number">
+                    </div>
+                    <div class="body-input-passwd">
+                        <input type="password" placeholder="Mật khẩu">
+                    </div>
+                    <div class="body-input-repasswd">
+                        <input type="password" placeholder="Nhập lại mật khẩu">
+                    </div>
+                    <button class="modal-container__body-btn3">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-login">
+            <div class="modal-container">
+                <header class="modal-container__header-login">
+                    <h1 class="modal-container__header-label-login">Đăng nhập</h1>
+                    <label for="header-checkbox__login" class="modal-container__header-icon">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </header>
+                <div class="modal-container__body">
+                    <div class="modal-container__body-input">
+                        <h2 class="input-gmail__label-login">Email/Số điện thoại:</h2>
+                        <input type="text" placeholder="Nhập email/số điện thoại">
+                    </div>
+                    <div class="modal-container__body-input">
+                        <h2 class="input-password__label-login">Password:</h2>
+                        <input type="password" placeholder="Nhập password">
+                    </div>
+                    <button class="modal-container__body-btn4">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+
+    <script type="text/javascript" src="./assets/js/giohang.js" >
+    </script>
+</body>
+</html>

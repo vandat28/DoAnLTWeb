@@ -1,0 +1,272 @@
+/* info */
+.Item {
+    margin-top: 20px;
+}
+
+.Item-head__img {
+    width: 500px;
+    height: 550px;
+}
+
+.Item-luv-share {
+    display: flex;
+    
+}
+
+.Item-share {
+    margin-top: 10px;
+    margin-right: 50px;
+    
+}
+
+.Item-share-text {
+    font-size: 20px;
+}
+
+.Item-share-icon {
+    font-size: 30px;
+}
+
+.Item-luv {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.Item-luv-icon {
+    font-size: 30px;
+}
+
+.Item-first {
+    font-size: 30px;
+    margin: auto;
+    line-height: 1;
+}
+
+.Item-start {
+    font-size: medium;
+    display: inline-flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.Rating-start {
+    display: flex;
+    color: coral;
+    margin-right: 20px;
+}
+
+.Rating-start-number {
+    line-height: 20px;
+}
+
+.home-product-item__rating {
+    margin-right: 100px;
+}
+
+.Item__rate {
+    font-size: medium;
+    color: dimgrey;
+    margin-right: 100px;
+}
+
+.Item__sold {
+    font-size: medium;
+    color: dimgrey;
+}
+
+.Item-money {
+    font-size: 40px;
+    color: coral;
+    margin-bottom: 40px;
+    margin-right: 50px;
+}
+
+.ship {
+    color: dimgrey;
+}
+
+.Item-ship {
+    display: flex;
+    font-size: 15px;
+}
+
+.Item-ship-free {
+    margin-left: 50px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.Item-ship-free-address {
+    margin-left: 50px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.Item-ship-input {
+    margin-left: 10px;
+    line-height: 10px;
+    line-height: 20%;
+}
+
+.Item-number {
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.Item-number-input {
+    line-break: 20px;
+    color: dimgrey;
+}
+
+.Item-choice {
+    margin-left: 50px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.Item-CS {
+    color: dimgrey;
+    line-break: 30px;
+}
+
+.Item-add-buy {
+    display: flex;
+}
+
+.Item-add-buy-GH {
+    padding: 20px 20px 20px 20px;
+    background-color: palegoldenrod;
+    text-align: center;
+    margin-left: 30px;
+    font-size: 25px;
+    border: rgb(170, 221, 160);
+    margin-right: 40px;
+}
+
+.Item-add-buy-GH-text {
+    color: coral;
+}
+
+.Item-buy {
+    background-color: orangered;
+    text-align: center;
+    font-size: 20px;
+    border: tomato;
+}
+
+.Item-buy-now {
+    color: #e0e0e0;
+}
+
+.Item-detai {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.Item-detail-title {
+    background-color: #e0e0e0;
+    padding: 20px 20px;
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.Item-cate-VN {
+    display: flex;
+}
+
+.Item-cate {
+    font-size: 15px;
+    color: dimgrey;
+    margin-right: 30px;
+}
+
+.Item-VN {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.Item-type {
+    margin-top: 10px;
+    display: flex;
+}
+
+.Item-type-x {
+    font-size: 15px;
+    color: dimgrey;
+    margin-right: 30px;
+}
+
+.Item-type-y {
+    font-size: 15px;
+    margin-left: 7px;
+}
+
+.Item-home {
+    margin-top: 10px;
+    display: flex;
+}
+
+.Item-home-in {
+    font-size: 15px;
+    color: dimgrey;
+    margin-right: 30px;
+}
+
+.Item-home-number {
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.Item-send {
+    margin-top: 10px;
+    display: flex;
+}
+
+.Item-send-to {
+    font-size: 15px;
+    color: dimgrey;
+    margin-right: 30px;
+}
+
+.Item-send-address {
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.Item-specifically-title {
+    background-color: #e0e0e0;
+    padding: 20px 20px;
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Item-specifically-Content {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.Item-specifically-day {
+    margin-bottom: 15px;
+}
+
+.Item-specifically-no-chemistry {
+    margin-bottom: 15px;
+}
+
+.Item-specifically-sugar {
+    margin-bottom: 15px;
+}
+.Item-share-icon{
+    text-decoration: none;
+}
+.Item-luv-icon{
+    text-decoration: none;
+    margin-left: 20px;
+}

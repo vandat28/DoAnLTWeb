@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/Admin.css">
+    <link rel="shortcut icon" href="./assets/css/img/Logo.png" type="image/x-icon">
+    <title>Admin</title>
+</head>
+
+<body>
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="" class="header__nav-item--link">
+                                Trang chủ
+                            </a>
+                            
+                        </li>
+                        <li class="header__nav-item header__nav-item--separate">
+                            <span class="header__nav-item--link">Kết nối</span>
+                            <label class="header__nav-item--link"  for="header-checkbox__facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </label>
+                            <label class="header__nav-item--link" for="header-checkbox__instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </label>
+                        </li>
+                    </ul>
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item header__nav-item--link-notify">
+                            <a href="" class="header__nav-item--link">
+                                <i class="fa-regular fa-bell bell-icon"></i>
+                                Thông báo
+                            </a>
+                            <div class="Item__notifi">
+                                <h2 class="Item__notifi-label">Thông báo</h2>
+                                <ul class="Item__notifi-list">
+                                    <li class="Item__notifi-item Item__notifi-item--active">
+                                        <a href="#" class="Item__notifi-link">
+                                            <div class="Item__notifi-header">
+                                                <img src="./assets/css/img/mienphi-vanchuyen-1.jpg" alt="" class="Item__notifi-img">
+                                            </div>
+                                            <div class="Item__notifi-body">
+                                                <h3 class="Item__notifi-body-label">Mã miễn phí vận chuyển sắp hết hạn</h3>
+                                                <span class="Item__notifi-body-content">Hiệu lực: 0:00 4/1/2023 - 23:59 7/1/2023</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="Item__notifi-item">
+                                        <a href="" class="Item__notifi-link">
+                                            <div class="Item__notifi-header">
+                                                <img src="./assets/css/img/mienphi-vanchuyen-1.jpg" alt="" class="Item__notifi-img">
+                                            </div>
+                                            <div class="Item__notifi-body">
+                                                <h3 class="Item__notifi-body-label">Mã miễn phí vận chuyển sắp hết hạn</h3>
+                                                <span class="Item__notifi-body-content">Hiệu lực: 0:00 4/1/2023 - 23:59 7/1/2023</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="Item__notifi-item Item__notifi-item--active">
+                                        <a href="#" class="Item__notifi-link">
+                                            <div class="Item__notifi-header">
+                                                <img src="./assets/css/img/Khuyến-mãi-Giảm-giá.jpg" alt="" class="Item__notifi-img">
+                                            </div>
+                                            <div class="Item__notifi-body">
+                                                <h3 class="Item__notifi-body-label">Săn ngay mã sale cực khủng!!!</h3>
+                                                <span class="Item__notifi-body-content">Mã giảm giá 50% với các đơn trên 2.000.000đ đang được săn đón. Săn ngay thôi!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="Item__notifi-bottom">
+                                    <a href="#" class="Item__notifi-bottom-link">
+                                        Xem tất cả
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <label for="header-checkbox__register" class="header__nav-item--link">
+                                Đăng ký
+                            </label>
+                        </li>
+                        <li class="header__nav-item">
+                            <label for="header-checkbox__login" class="header__nav-item--link">
+                                Đăng nhập
+                            </label>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-with-search">
+                    <div class="logo">
+                        <a href="Trangchu.html" class="logo-link">
+                            <img class="image" src="./assets/css/img/Logo.png" alt="">
+                        </a>
+                    </div>
+                </div>   
+            </div>
+       
+    </Header>
+        <main>
+            <div class="col l-3 m-0 c-0">
+                <div class="group-box">
+                    <div class="title">
+                        Danh mục
+                    </div>
+                    <div class="leftMenu">
+                        <ul>
+                            <li><a href="Admin.html">Trang chủ quản trị</a></li>
+                            <li><a href="quanlysanpham.html">Quản Lý Sản Phẩm</a></li>
+                            <li><a href="#">Quản lý đơn đặt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col l-9 m-12 c-12">
+                <div class="content">
+                    <form id="my-form" class="product-form" name="product-form" method="POST" action="">
+                        <label for="product-code">Mã sản phẩm:</label>
+                        <input type="text" id="product-code" name="productCode" required>
+
+                        <label for="product-image">Hình ảnh:</label>
+                        <input type="file" id="product-image" name="productImage" accept="image/*" required>
+                      
+                        <label for="product-name">Tên sản phẩm:</label>
+                        <input type="text" id="product-name" name="productName" required>
+                      
+                        <label for="product-price">Giá tiền:</label>
+                        <input type="number" id="product-price" name="productPrice" min="0" required>
+                      
+                      
+                        <button type="submit">Thêm sản phẩm</button>
+                      </form>                      
+                </div>
+                <div class="table_listP">
+                    <div class="title" style="text-align: center;">
+                        Bảng Danh Sách Sản Phẩm
+                    </div>
+                    <table id="table_Ps" >
+                        <thead class="table_Ps_hd">
+                            <tr>
+                                <th>Mã sản phẩm</th>
+                                <th>Hình ảnh</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Giá tiền</th>
+                                <th>Xóa sản phẩm</th>
+                              </tr>
+                        </thead>
+                        <tbody class="table_Ps_bd"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            
+    
+        </main>
+            <footer class="footer">
+                <div class="grid wide footer__content">
+                  <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
+                      <h3 class="footer_heading">Chăm sóc khách hàng</h3>
+                      <ul class="footer-list">
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">Tư vấn trợ giúp</a>
+                        </li>
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">Hướng dẫn sử dụng</a>
+                        </li>
+                        <li>
+                          <a href="#" class="footer-items_link">Hướng dẫn mua hàng</a>
+                        </li>
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">Hướng dẫn bán hàng</a>
+                        </li>
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">Thanh toán</a>
+                        </li>
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">Vận chuyển</a>
+                        </li>
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">Trả hàng & hoàn tiền</a>
+                        </li>
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">Chính sách bảo hành</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                      <h3 class="footer_heading">Về Necess Market</h3>
+                      <ul class="footer-list">
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">Giới thiệu về Necess Market</a>
+                        </li>
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">Tuyển dụng</a>
+                        </li>
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">Điều khoản</a>
+                        </li>
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">Chính sách bảo mật</a>
+                        </li>
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">Flash Sale</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                      <h3 class="footer_heading">Thanh Toán</h3>
+                      <ul class="footer-list">
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">
+                            <img src="./assets/css/img/visa.jpg" width="50" height="50" alt="Thanh toán bằng thẻ VISA">
+                          </a>
+                        </li>
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">
+                            <img src="./assets/css/img/thanhtoannhanhang.png" width="50" height="50" alt="Thanh Toán khi nhận hàng">
+                          </a>
+                        </li>
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">
+                            <img src="./assets/css/img/thanhtoanbangthenganhang.jpg" width="50" height="50" alt="Thanh toán bằng thẻ ngân hàng">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                    <h3 class="footer_heading">Theo dõi chúng tôi</h3>
+                      <ul class="footer-list">
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">
+                            <i class="footer-items_icon fab fa-facebook-square">
+                            </i>
+                            FaceBook
+                          </a>
+                        </li>
+                        <li class="footer-items">
+                          <a href="#" class="footer-items_link">
+                            <i class="footer-items_icon fab fa-instagram-square">
+                            </i>
+                            Instagram
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                      <h3 class="footer_heading">Tải ứng dụng trên</h3>
+                      <div class="footer_download">
+                        <a href="#" class="footer_download-QR">
+                          <img src="./assets/css/img/Nessces-Qr.jpg" width="50" height="50" alt="Download QR"
+                            class="footer_download-QR">
+                        </a>
+                        <div class="footer__qr-apps">
+                            <a href="" class="footer__qr-apps-link">
+                                <img src="./assets/img/AppStore.png" alt="" class="footer__qr-apps-img">
+                            </a>
+                            <a href="" class="footer__qr-apps-link">
+                                <img src="./assets/img/GGPlay.png" alt="" class="footer__qr-apps-img">
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-bottom">
+                    <div class="grid wide">
+                      <p class="footer_text"> © 2022 Necess Market</p>
+                    </div>
+                  </div>
+              
+        </footer>
+        <script>
+            var listProduct 
+            let Products= JSON.parse(localStorage.getItem("Products"));
+            let dssp = ''
+            if(!Products){
+                listProduct = new Array()
+            }else{
+                listProduct = [...Products]
+            }
+
+            const frm = document.querySelector('#my-form');
+
+            frm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Ngăn chặn chuyển trang
+
+            // Xử lý dữ liệu form ở đây
+                var id = frm.productCode.value
+                var name = frm.productName.value
+                var img = frm.productImage.value
+                let fileName = img.split(/(\\|\/)/g).pop();
+                var price = frm.productPrice.value
+                var product = new Object()
+                let dssp2 = ''
+                product.id = id
+                product.name = name
+                product.img = './assets/css/img/'+fileName
+                product.price = price
+                listProduct.push(product)
+                localStorage.setItem("Products",JSON.stringify(listProduct));
+            // Reset form (nếu cần)
+                frm.reset();
+                listProduct.forEach(element => {
+                    dssp2 += '<tr>'+
+                            '<td>'+element.id+'</td>'+
+                            '<td><img src="'+element.img+'" /></td>'+
+                            '<td>'+element.name+'</td>'+
+                            '<td>'+(element.price*1).toLocaleString('vi')+'<span>đ</span></td>'+
+                            '<td><button onclick="deleteP(this)">Xóa</button></td>'+
+                            '</tr>'
+                });
+                document.querySelector(".table_Ps_bd").innerHTML = dssp2
+            });
+
+            listProduct.forEach(element => {
+                    dssp += '<tr>'+
+                            '<td>'+element.id+'</td>'+
+                            '<td><img src="'+element.img+'" /></td>'+
+                            '<td>'+element.name+'</td>'+
+                            '<td>'+(element.price*1).toLocaleString('vi')+'<span>đ</span></td>'+
+                            '<td><button onclick="deleteP(this)">Xóa</button></td>'+
+                            '</tr>'
+                });
+            document.querySelector(".table_Ps_bd").innerHTML = dssp
+            
+            function deleteP(x){
+                if (confirm("Bạn có chắc chắn muốn xóa?")) {
+                    const name = x.parentElement.parentElement.children[2].innerText;
+                for(let i = 0;i<listProduct.length;i++){
+                    if(name == listProduct[i].name){
+                        listProduct.splice(i,1)
+                        break;
+                    }
+                }
+                localStorage.setItem("Products",JSON.stringify(listProduct));
+                location.reload()  
+                } else {
+                    return;
+                } 
+            }
+        </script>
+</body>
+
+</html>
+

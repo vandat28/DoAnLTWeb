@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="shortcut icon" href="./assets/css/img/Logo.png" type="image/x-icon">
+    <title>NeccesMarket</title>
+</head>
+<body>     
+    <div id="loading">
+        <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div> 
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="" class="header__nav-item--link">
+                                Trang chủ
+                            </a>
+                            
+                        </li>
+                        <li class="header__nav-item header__nav-item--separate">
+                            <span class="header__nav-item--link">Kết nối</span>
+                            <label class="header__nav-item--link"  for="header-checkbox__facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </label>
+                            <label class="header__nav-item--link" for="header-checkbox__instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </label>
+                        </li>
+                    </ul>
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item header__nav-item--link-notify">
+                            <a href="" class="header__nav-item--link">
+                                <i class="fa-regular fa-bell bell-icon"></i>
+                                Thông báo
+                            </a>
+                            <div class="Item__notifi">
+                                <h2 class="Item__notifi-label">Thông báo</h2>
+                                <ul class="Item__notifi-list">
+                                    <li class="Item__notifi-item Item__notifi-item--active">
+                                        <a href="#" class="Item__notifi-link">
+                                            <div class="Item__notifi-header">
+                                                <img src="./assets/css/img/mienphi-vanchuyen-1.jpg" alt="" class="Item__notifi-img">
+                                            </div>
+                                            <div class="Item__notifi-body">
+                                                <h3 class="Item__notifi-body-label">Mã miễn phí vận chuyển sắp hết hạn</h3>
+                                                <span class="Item__notifi-body-content">Hiệu lực: 0:00 4/1/2023 - 23:59 7/1/2023</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="Item__notifi-item">
+                                        <a href="" class="Item__notifi-link">
+                                            <div class="Item__notifi-header">
+                                                <img src="./assets/css/img/mienphi-vanchuyen-1.jpg" alt="" class="Item__notifi-img">
+                                            </div>
+                                            <div class="Item__notifi-body">
+                                                <h3 class="Item__notifi-body-label">Mã miễn phí vận chuyển sắp hết hạn</h3>
+                                                <span class="Item__notifi-body-content">Hiệu lực: 0:00 4/1/2023 - 23:59 7/1/2023</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="Item__notifi-item Item__notifi-item--active">
+                                        <a href="#" class="Item__notifi-link">
+                                            <div class="Item__notifi-header">
+                                                <img src="./assets/css/img/Khuyến-mãi-Giảm-giá.jpg" alt="" class="Item__notifi-img">
+                                            </div>
+                                            <div class="Item__notifi-body">
+                                                <h3 class="Item__notifi-body-label">Săn ngay mã sale cực khủng!!!</h3>
+                                                <span class="Item__notifi-body-content">Mã giảm giá 50% với các đơn trên 2.000.000đ đang được săn đón. Săn ngay thôi!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="Item__notifi-bottom">
+                                    <a href="#" class="Item__notifi-bottom-link">
+                                        Xem tất cả
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-item login-success">
+                            <label for="header-checkbox__register" class="header__nav-item--link">
+                                Đăng ký
+                            </label>
+                        </li>
+                        <li class="header__nav-item login-success">
+                            <label for="header-checkbox__login" class="header__nav-item--link">
+                                Đăng nhập
+                            </label>
+                        </li>
+                        <li class="header__nav-item header-account">
+                            <a href="#" class="header-account__link">
+                                <div class="header-account__face">
+                                    <img src="./assets/css/img/anh-dai-dien-FB-200.jpg" alt="" class="header-account__img">
+                                </div>
+                            </a>
+                            <div class="header-account__setting">
+                                <div class="header-account__setting-heading">
+                                    <div class="header-account__setting-face">
+                                        <img src="./assets/css/img/anh-dai-dien-FB-200.jpg" alt="" class="header-account__setting-img">
+                                    </div>
+                                    <div class="header-account__setting-name">
+
+                                    </div>
+                                </div>
+                                <div class="header-account__setting-body">
+                                    <a href="#" class="body-setting">
+                                        <i class=" fa-solid fa-gear"></i>
+                                        Cài đặt
+                                    </a>
+                                    <a href="#" class="body-setting">
+                                        <i class=" fa-solid fa-circle-question"></i>
+                                        Trợ giúp & hỗ trợ
+                                    </a>
+                                    <a href="./Trangchu.html" class="body-setting" onclick="startBegin()">
+                                        <i class=" fa-solid fa-right-from-bracket"></i>
+                                        Đăng xuất
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-with-search">
+                    <input hidden type="checkbox" id="check-search" class="search-mobile__check">
+                    <label class="search-mobile" for="check-search">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </label>
+                    <div class="logo">
+                        <a href="Trangchu.html" class="logo-link">
+                            <img class="image" src="./assets/css/img/Logo.png" alt="">
+                        </a>
+                    </div>
+                    <form class="search" action="timkiem.html" onsubmit="return search()">
+                        <div class="search-find" >
+                            <input type="text" placeholder="Tìm kiếm" class="search-find-input">
+                        </div>
+                        <button type="submit" class="search-btn">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <div class="shopping-cart-icon">
+                        <a href="giohang.html" class="shopping-cart-icon-link">
+                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>   
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="grid wide">
+                <div class="row container">
+                    <div class="col l-3 m-0 c-0">
+                        <nav class="menu ">
+                            <span><i class="fa-solid fa-bars"></i>Danh mục sản phẩm</span>
+                            <ul class="items">
+                                <li class="item">
+                                    <div class="item-parent">THỊT, CÁ, TRỨNG, HẢI SẢN 
+                                        <div class="icon-open"><span class="fas fa-caret-down"></span></div>
+                                        <div class="hidden icon-close"><span class="fas fa-caret-up"></span></div>
+                                    </div>
+                                    <div class="items-child">
+                                        <a class="item-child" href="#">Thịt các loại</a>
+                                        <a class="item-child" href="#">Cá các loại</a>
+                                        <a class="item-child" href="#">Trứng gà</a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-parent">DẦU ĂN, NƯỚC CHẤM, GIA VỊ
+                                        <div class="icon-open"><span class="fas fa-caret-down"></span></div>
+                                        <div class="hidden icon-close"><span class="fas fa-caret-up"></span></div>
+                                    </div>
+                                    <div class="items-child">
+                                        <a class="item-child" href="#">Dầu Ăn</a>
+                                        <a class="item-child" href="#">Nước Chấm</a>
+                                        <a class="item-child" href="#">Gia Vị</a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-parent">RAU, CỦ, NẤM, TRÁI CÂY
+                                        <div class="icon-open"><span class="fas fa-caret-down"></span></div>
+                                        <div class="hidden icon-close"><span class="fas fa-caret-up"></span></div>
+                                    </div>
+                                    <div class="items-child">
+                                        <a class="item-child" href="#">Rau</a>
+                                        <a class="item-child" href="#">Trái Cây</a>
+                                        <a class="item-child" href="#">Thực Vật Thô</a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-parent">KEM, THỰC PHẨM ĐÔNG MÁT
+                                        <div class="icon-open"><span class="fas fa-caret-down"></span></div>
+                                        <div class="hidden icon-close"><span class="fas fa-caret-up"></span></div>
+                                    </div>
+                                    <div class="items-child">
+                                        <a class="item-child" href="#">Kem</a>
+                                        <a class="item-child" href="#">THỰC PHẨM ĐÔNG MÁT</a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-parent">GẠO, BỘT, ĐỒ KHÔ
+                                        <div class="icon-open"><span class="fas fa-caret-down"></span></div>
+                                        <div class="hidden icon-close"><span class="fas fa-caret-up"></span></div>
+                                    </div>
+                                    <div class="items-child">
+                                        <a class="item-child" href="#">Gạo</a>
+                                        <a class="item-child" href="#">Bột</a>
+                                        <a class="item-child" href="#">Đồ Khô</a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                <li class="item">
+                                    <div class="item-parent">MÌ, MIẾN, CHÁO, PHỞ 
+                                        <div class="icon-open"><span class="fas fa-caret-down"></span></div>
+                                        <div class="hidden icon-close"><span class="fas fa-caret-up"></span></div>
+                                    </div>
+                                    <div class="items-child">
+                                        <a class="item-child" href="#">Mì</a>
+                                        <a class="item-child" href="#">Cháo</a>
+                                        <a class="item-child" href="#">Phở</a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-parent">BIA, NƯỚC GIẢI KHÁT
+                                        <div class="icon-open"><span class="fas fa-caret-down"></span></div>
+                                        <div class="hidden icon-close"><span class="fas fa-caret-up"></span></div>
+                                    </div>
+                                    <div class="items-child">
+                                        <a class="item-child" href="#">Bia</a>
+                                        <a class="item-child" href="#">Nước Giải Khát </a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-parent">SỮA CÁC LOẠI
+                                        <div class="icon-open"><span class="fas fa-caret-down"></span></div>
+                                        <div class="hidden icon-close"><span class="fas fa-caret-up"></span></div>
+                                    </div>
+                                    <div class="items-child">
+                                        <a class="item-child" href="#">Sửa Có Đường</a>
+                                        <a class="item-child" href="#">Sửa Ăn Khiêng </a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-parent">SẢN PHẨM CHO MẸ VÀ BÉ
+                                        <div class="icon-open"><span class="fas fa-caret-down"></span></div>
+                                        <div class="hidden icon-close"><span class="fas fa-caret-up"></span></div>
+                                    </div>
+                                    <div class="items-child">
+                                        <a class="item-child" href="#">Dành Cho Mẹ</a>
+                                        <a class="item-child" href="#">Dành Cho Bé</a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-parent">CHĂM SÓC THÚ CƯNG
+                                        <div class="icon-open"><span class="fas fa-caret-down"></span></div>
+                                        <div class="hidden icon-close"><span class="fas fa-caret-up"></span></div>
+                                    </div>
+                                    <div class="items-child">
+                                        <a class="item-child" href="#">Phụ Kiện</a>
+                                        <a class="item-child" href="#">Thức Ăn</a>
+                                        <a class="item-child" href="#">Dịch Vụ</a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-parent">CHĂM SÓC CÁ NHÂN
+                                        <div class="icon-open"><span class="fas fa-caret-down"></span></div>
+                                        <div class="hidden icon-close"><span class="fas fa-caret-up"></span></div>
+                                    </div>
+                                    <div class="items-child">
+                                        <a class="item-child" href="#">Dụng Cụ Vệ Sinh</a>
+                                        <a class="item-child" href="#">Các Sản Phẩm Y Tế</a>
+                                        <a class="item-child" href="#">Sơ Cứu</a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-parent">BÁNH KẸO CÁC LOẠI
+                                        <div class="icon-open"><span class="fas fa-caret-down"></span></div>
+                                        <div class="hidden icon-close"><span class="fas fa-caret-up"></span></div>
+                                    </div>
+                                    <div class="items-child">
+                                        <a class="item-child" href="#">Có Đường</a>
+                                        <a class="item-child" href="#">Ăn Khiêng</a>
+                                        <a class="item-child" href="#">Không đường</a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-parent">ĐỒ DÙNG GIA ĐÌNH
+                                        <div class="icon-open"><span class="fas fa-caret-down"></span></div>
+                                        <div class="hidden icon-close"><span class="fas fa-caret-up"></span></div>
+                                    </div>
+                                    <div class="items-child">
+                                        <a class="item-child" href="#">Bàn</a>
+                                        <a class="item-child" href="#">Ghế</a>
+                                        <a class="item-child" href="#">Tủ</a>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col l-9 m-12 c-12">
+                        
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <!-------- footer -------->
+<footer class="footer">
+    <div class="grid wide footer__content">
+      <div class="row">
+        <div class="col l-2-4 m-4 c-6">
+          <h3 class="footer_heading">Chăm sóc khách hàng</h3>
+          <ul class="footer-list">
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">Tư vấn trợ giúp</a>
+            </li>
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">Hướng dẫn sử dụng</a>
+            </li>
+            <li>
+              <a href="#" class="footer-items_link">Hướng dẫn mua hàng</a>
+            </li>
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">Hướng dẫn bán hàng</a>
+            </li>
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">Thanh toán</a>
+            </li>
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">Vận chuyển</a>
+            </li>
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">Trả hàng & hoàn tiền</a>
+            </li>
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">Chính sách bảo hành</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l-2-4 m-4 c-6">
+          <h3 class="footer_heading">Về Necess Market</h3>
+          <ul class="footer-list">
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">Giới thiệu về Necess Market</a>
+            </li>
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">Tuyển dụng</a>
+            </li>
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">Điều khoản</a>
+            </li>
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">Chính sách bảo mật</a>
+            </li>
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">Flash Sale</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l-2-4 m-4 c-6">
+          <h3 class="footer_heading">Thanh Toán</h3>
+          <ul class="footer-list">
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">
+                <img src="./assets/css/img/visa.jpg" width="50" height="50" alt="Thanh toán bằng thẻ VISA">
+              </a>
+            </li>
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">
+                <img src="./assets/css/img/thanhtoannhanhang.png" width="50" height="50" alt="Thanh Toán khi nhận hàng">
+              </a>
+            </li>
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">
+                <img src="./assets/css/img/thanhtoanbangthenganhang.jpg" width="50" height="50" alt="Thanh toán bằng thẻ ngân hàng">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l-2-4 m-4 c-6">
+        <h3 class="footer_heading">Theo dõi chúng tôi</h3>
+          <ul class="footer-list">
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">
+                <i class="footer-items_icon fab fa-facebook-square">
+                </i>
+                FaceBook
+              </a>
+            </li>
+            <li class="footer-items">
+              <a href="#" class="footer-items_link">
+                <i class="footer-items_icon fab fa-instagram-square">
+                </i>
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l-2-4 m-4 c-6">
+          <h3 class="footer_heading">Tải ứng dụng trên</h3>
+          <div class="footer_download">
+            <a href="#" class="footer_download-QR">
+              <img src="./assets/css/img/Nessces-Qr.jpg" width="50" height="50" alt="Download QR"
+                class="footer_download-QR">
+            </a>
+            <div class="footer__qr-apps">
+                <a href="" class="footer__qr-apps-link">
+                    <img src="./assets/img/AppStore.png" alt="" class="footer__qr-apps-img">
+                </a>
+                <a href="" class="footer__qr-apps-link">
+                    <img src="./assets/img/GGPlay.png" alt="" class="footer__qr-apps-img">
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="grid wide">
+          <p class="footer_text"> © 2022 Necess Market</p>
+        </div>
+      </div>
+  </footer>
+                                        <!-------- Modal -------->
+        <input hidden type="checkbox" id="header-checkbox__facebook" class="header-checkface">
+        <input hidden type="checkbox" id="header-checkbox__instagram" class="header-checkins">
+        <input hidden type="checkbox" id="header-checkbox__register" class="header-checkreg">
+        <input hidden type="checkbox" id="header-checkbox__login" class="header-checklog">
+        <div class="modal-facebook">
+            <div class="modal-container">
+                <header class="modal-container__header-facebook">
+                    <h1 class="modal-container__header-label-face">
+                        <span class="modal-container__header-label">Facebook</span>
+                    </h1>
+                    <label for="header-checkbox__facebook" class="modal-container__header-icon">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </header>
+                <div class="modal-container__body">
+                    <div class="modal-container__body-input">
+                        <h2 class="input-gmail__label">Email:</h2>
+                        <input type="text" placeholder="Nhập email">
+                    </div>
+                    <div class="modal-container__body-input">
+                        <h2 class="input-password__label">Password:</h2>
+                        <input type="password" placeholder="Nhập password">
+                    </div>
+                    <button  class="modal-container__body-btn">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-instagram">
+            <div class="modal-container">
+                <header class="modal-container__header-instagram">
+                    <h1 class="modal-container__header-label-ins">Instagram</h1>
+                    <label for="header-checkbox__instagram" class="modal-container__header-icon">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </header>
+                <div class="modal-container__body">
+                    <div class="modal-container__body-input">
+                        <h2 class="input-gmail__label">Email:</h2>
+                        <input type="text" placeholder="Phone number or email">
+                    </div>
+                    <div class="modal-container__body-input">
+                        <h2 class="input-password__label">Password:</h2>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <button class="modal-container__body-btn2">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-register">
+            <div class="modal-container-register">
+                <header class="modal-container__header-register">
+                    <h1 class="modal-container__header-label-register">Đăng ký</h1>
+                    <label for="header-checkbox__register" class="modal-container__header-icon">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </header>
+                <div class="modal-container__body-register">
+                    <form action="#" onsubmit="return adduser()">
+                        <div class="modal-container__body-input-info">
+                            <div class="body-input-name">
+                                <input class="name-value" required pattern="^[a-zA-Z]+[^0-9]$" type="text" placeholder="Họ và tên. VD: NguyenVanA">
+                            </div>
+                            <div class="body-input-address">
+                                <input class="addresses-value" required type="text" placeholder="Địa chỉ. VD: CanTho">
+                            </div>
+                        </div>
+                        <div class="body-input-phone">
+                            <input class="phone-value" required pattern="^[0-9]{10,11}$" type="text" placeholder="Số điện thoại">
+                        </div>
+                        <div class="body-input-passwd">
+                            <input class="passwd-value" required type="password" placeholder="Mật khẩu">
+                        </div>
+                        <div class="body-input-repasswd">
+                            <input class="repasswd-value" required type="password" placeholder="Nhập lại mật khẩu">
+                        </div>
+                        <button type="submit" class="modal-container__body-btn3" onclick="adduser()">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal-login">
+            <div class="modal-container">
+                <header class="modal-container__header-login">
+                    <h1 class="modal-container__header-label-login">Đăng nhập</h1>
+                    <label for="header-checkbox__login" class="modal-container__header-icon">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </header>
+                <div class="modal-container__body">
+                    <form action="#" >
+                        <div class="modal-container__body-input">
+                            <h2 class="input-gmail__label-login">Số điện thoại:</h2>
+                            <input class="login-phone" required pattern="^[0-9]{10,11}$" type="text" placeholder="">
+                        </div>
+                        <div class="modal-container__body-input">
+                            <h2 class="input-password__label-login">Password:</h2>
+                            <input class="login-passwd" required type="password" placeholder="">
+                        </div>
+                        <button type="submit" class="modal-container__body-btn4" onclick="check()">Đăng nhập</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+    <script>
+        var slideShow = document.querySelector(".slideshow");
+var slidewrapper1 = document.querySelector(".slide-wrapper1");
+var slidewrapper2 = document.querySelector(".slide-wrapper2");
+var slidewrapper3 = document.querySelector(".slide-wrapper3");
+var slidewrapper4 = document.querySelector(".slide-wrapper4");
+slidewrapper1.checked = true;
+function change() {
+    setTimeout(() => {
+        slideShow.style.backgroundImage = "url(./assets/css/img/Slide-2.png)";
+        slidewrapper2.checked = true;
+    }, 3000);
+    setTimeout(() => {
+        slideShow.style.backgroundImage = "url(./assets/css/img/Slide-3.png)";
+        slidewrapper3.checked = true;
+    }, 6000);
+    setTimeout(() => {
+        slideShow.style.backgroundImage = "url(./assets/css/img/Slide-4.jpg)";
+        slidewrapper4.checked = true;
+    }, 9000);
+    setTimeout(() => {
+        slideShow.style.backgroundImage = "url(./assets/css/img/Slide-1.jpg)";
+        slidewrapper1.checked = true;
+    }, 12000);
+}
+setInterval(() => {
+    change()
+}, 15000);
+
+slidewrapper1.onclick = function() {
+    slideShow.style.backgroundImage = "url(./assets/css/img/Slide-1.jpg)";
+}
+slidewrapper2.onclick = function() {
+    slideShow.style.backgroundImage = "url(./assets/css/img/Slide-2.png)";
+}
+slidewrapper3.onclick = function() {
+    slideShow.style.backgroundImage = "url(./assets/css/img/Slide-3.png)";
+}
+slidewrapper4.onclick = function() {
+    slideShow.style.backgroundImage = "url(./assets/css/img/Slide-4.jpg)";
+}
+    </script>
+</body>
+</html>
